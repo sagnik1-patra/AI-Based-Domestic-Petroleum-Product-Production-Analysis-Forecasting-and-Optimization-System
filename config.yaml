@@ -1,0 +1,38 @@
+project:
+  name: AI-Based Domestic Petroleum Product Production Analysis, Forecasting and Optimization
+    System
+  dataset: DOMESTIC_PRODUCTION_OF_PETROLEUM_PRODUCTS_1.xls
+  target_column: total
+data:
+  total_records: 11
+  training_records: 10
+  testing_records: 1
+  features:
+  - year
+  - light_distillates_liquified_petroleum_gas
+  - light_distillates_petrol
+  - light_distillates_naphtha
+  - middle_distillates_kerosene
+  - middle_distillates_aviation_turbine_fuel
+  - middle_distillates_high_speed_diesel_oil
+  - middle_distillates_light_diesel_oil
+  - heavy_ends_fuel_oils
+  - heavy_ends_lubricants
+  - heavy_ends_petroleum_coke
+  - heavy_ends_bitumen
+  - others
+  - annual_growth_previous_year
+  split_type: chronological_by_year
+training:
+  random_state: 42
+  neural_epochs: 100
+  optimizer: Adam
+  loss: MSE
+models:
+  best_ml_model: Ridge Regression
+  neural_network: Feedforward Neural Network
+outputs:
+  h5: petroleum_model.h5
+  pkl: petroleum_model.pkl
+  yaml: config.yaml
+  json: model_metadata.json

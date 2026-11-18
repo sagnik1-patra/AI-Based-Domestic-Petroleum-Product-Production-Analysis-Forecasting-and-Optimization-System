@@ -1,0 +1,38 @@
+{
+    "project": "PSO-Based Domestic Petroleum Production Forecasting",
+    "created_at": "2026-11-18T11:35:19.834267",
+    "algorithm": "PSO",
+    "base_model": "RandomForestRegressor",
+    "target": "total",
+    "features": [
+        "year"
+    ],
+    "total_records": 11,
+    "training_records": 9,
+    "testing_records": 2,
+    "validation_folds": 4,
+    "best_parameters": {
+        "n_estimators": 142,
+        "max_depth": 6,
+        "min_samples_split": 2,
+        "min_samples_leaf": 1,
+        "random_state": 42,
+        "n_jobs": -1
+    },
+    "validation_rmse": 12.419057873339952,
+    "test_metrics": {
+        "MAE": 37.70260563380258,
+        "MSE": 1449.5234965780419,
+        "RMSE": 38.072608218744904,
+        "R2": -50.700331849689505,
+        "MAPE": 20.307390765168936
+    },
+    "baseline_metrics": {
+        "MAE": 37.23479999999974,
+        "MSE": 1414.4673560399804,
+        "RMSE": 37.60940515403003,
+        "R2": -49.44998019725629,
+        "MAPE": 20.054404569248018
+    },
+    "note": "Small historical dataset. Future Random Forest projections are exploratory and cannot be treated as validated extrapolations."
+}

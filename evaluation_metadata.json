@@ -1,0 +1,23 @@
+{
+    "model": "Ridge Regression",
+    "target_column": "total",
+    "test_records": 1,
+    "split_type": "chronological_by_year",
+    "metrics": {
+        "MAE": 9.882411968101422,
+        "MSE": 97.66206630727423,
+        "RMSE": 9.882411968101422,
+        "R2": null,
+        "MAPE": 5.191433057418272
+    },
+    "generated_files": [
+        "accuracy_graph.png",
+        "heatmap.png",
+        "comparison_graph.png",
+        "result.csv",
+        "result_graph.png",
+        "prediction.csv",
+        "prediction_graph.png",
+        "residual_graph.png"
+    ]
+}

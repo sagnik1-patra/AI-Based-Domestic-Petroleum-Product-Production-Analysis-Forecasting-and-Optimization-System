@@ -1,0 +1,48 @@
+project:
+  name: AIS-Based Domestic Petroleum Production Analysis and Optimization
+  algorithm: Clonal Selection AIS
+  dataset: cleaned_petroleum_data.csv
+  target: total
+data:
+  records: 11
+  training_records: 10
+  testing_records: 1
+  features:
+  - year
+  - light_distillates_liquified_petroleum_gas
+  - light_distillates_petrol
+  - light_distillates_naphtha
+  - middle_distillates_kerosene
+  - middle_distillates_aviation_turbine_fuel
+  - middle_distillates_high_speed_diesel_oil
+  - middle_distillates_light_diesel_oil
+  - heavy_ends_fuel_oils
+  - heavy_ends_lubricants
+  - heavy_ends_petroleum_coke
+  - heavy_ends_bitumen
+  - others
+  - annual_growth_previous_year
+  split_type: chronological_by_year
+ais:
+  population_size: 10
+  generations: 12
+  selected_antibodies: 4
+  clones_per_antibody: 3
+  random_replacements: 2
+  fitness: Cross-validation RMSE
+  random_state: 42
+best_parameters:
+  n_estimators: 125
+  max_depth: 12
+  min_samples_split: 2
+  min_samples_leaf: 1
+  max_features: 0.5890249412265972
+  random_state: 42
+  n_jobs: -1
+best_validation_rmse: 24.73331380835083
+test_metrics:
+  MAE: 44.02163199999981
+  MSE: 1937.9040839434074
+  RMSE: 44.02163199999981
+  R2: null
+  MAPE: 23.125463332632805

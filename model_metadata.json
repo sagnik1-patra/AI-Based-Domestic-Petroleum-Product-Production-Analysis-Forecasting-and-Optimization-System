@@ -1,0 +1,44 @@
+{
+    "project_name": "AI-Based Domestic Petroleum Product Production Analysis, Forecasting and Optimization System",
+    "created_at": "2026-11-18T10:33:21.512690",
+    "dataset": "DOMESTIC_PRODUCTION_OF_PETROLEUM_PRODUCTS_1.xls",
+    "target_column": "total",
+    "features": [
+        "year",
+        "light_distillates_liquified_petroleum_gas",
+        "light_distillates_petrol",
+        "light_distillates_naphtha",
+        "middle_distillates_kerosene",
+        "middle_distillates_aviation_turbine_fuel",
+        "middle_distillates_high_speed_diesel_oil",
+        "middle_distillates_light_diesel_oil",
+        "heavy_ends_fuel_oils",
+        "heavy_ends_lubricants",
+        "heavy_ends_petroleum_coke",
+        "heavy_ends_bitumen",
+        "others",
+        "annual_growth_previous_year"
+    ],
+    "total_records": 11,
+    "training_records": 10,
+    "testing_records": 1,
+    "split_type": "chronological_by_year",
+    "best_ml_model": {
+        "name": "Ridge Regression",
+        "MAE": 9.882411968101422,
+        "RMSE": 9.882411968101422,
+        "R2": null
+    },
+    "neural_network": {
+        "architecture": [
+            64,
+            32,
+            16,
+            1
+        ],
+        "MAE": 59.667266235351576,
+        "RMSE": 59.667266235351576,
+        "R2": null,
+        "epochs_completed": 78
+    }
+}
